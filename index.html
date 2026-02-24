@@ -35,41 +35,55 @@
     <a href="#">Ir a descargas</a>
   </div>
 
-  <h2>Ejecutar Python</h2>
+ <h2>Ejecutar Python</h2>
 
 <textarea id="code" rows="8" style="width:100%;">
 print("Hola Kevin")
-x = 5 + 10
-print("Resultado:", x)
+for i in range(5):
+    print("Número:", i)
 </textarea>
 
 <br><br>
 <button onclick="runPython()">Ejecutar</button>
 
-<pre id="output"></pre>
+<pre id="output">Cargando Python...</pre>
 
 <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
 
 <script>
+let pyodideReady = false;
 let pyodide;
 
-async function loadPython(){
+async function init(){
   pyodide = await loadPyodide();
+  pyodideReady = true;
+  document.getElementById("output").textContent = "Python listo ✔";
 }
 
-loadPython();
+init();
 
 async function runPython(){
+  if(!pyodideReady){
+    document.getElementById("output").textContent = "Espera... Python aún está cargando";
+    return;
+  }
+
   const code = document.getElementById("code").value;
+
   try{
-    let result = await pyodide.runPythonAsync(code);
-    document.getElementById("output").textContent = result ?? "Ejecutado ✔";
+    pyodide.runPython(`
+import sys, io
+sys.stdout = io.StringIO()
+sys.stderr = io.StringIO()
+`);
+    pyodide.runPython(code);
+    const output = pyodide.runPython("sys.stdout.getvalue()");
+    document.getElementById("output").textContent = output || "Ejecutado ✔";
   }catch(err){
     document.getElementById("output").textContent = err;
   }
 }
 </script>
-
 </div>
 
 <script>
