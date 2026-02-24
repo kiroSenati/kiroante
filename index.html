@@ -35,6 +35,41 @@
     <a href="#">Ir a descargas</a>
   </div>
 
+  <h2>Ejecutar Python</h2>
+
+<textarea id="code" rows="8" style="width:100%;">
+print("Hola Kevin")
+x = 5 + 10
+print("Resultado:", x)
+</textarea>
+
+<br><br>
+<button onclick="runPython()">Ejecutar</button>
+
+<pre id="output"></pre>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
+
+<script>
+let pyodide;
+
+async function loadPython(){
+  pyodide = await loadPyodide();
+}
+
+loadPython();
+
+async function runPython(){
+  const code = document.getElementById("code").value;
+  try{
+    let result = await pyodide.runPythonAsync(code);
+    document.getElementById("output").textContent = result ?? "Ejecutado ✔";
+  }catch(err){
+    document.getElementById("output").textContent = err;
+  }
+}
+</script>
+
 </div>
 
 <script>
