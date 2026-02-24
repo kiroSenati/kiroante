@@ -1,0 +1,68 @@
+:root{
+  --bg:#6a0dad;
+  --card:#ffffff;
+  --text:#111;
+  --link:#ffd400;
+}
+
+body.dark{
+  --bg:#1b0033;
+  --card:#2b0a4d;
+  --text:#f1f1f1;
+  --link:#ffea00;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+}
+
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:10px 15px;
+  background:rgba(0,0,0,0.2);
+}
+
+.logo{
+  font-size:18px;
+  font-weight:bold;
+}
+
+button{
+  background:var(--link);
+  border:none;
+  padding:6px 10px;
+  cursor:pointer;
+  font-weight:bold;
+}
+
+/* CONTENEDOR */
+.container{
+  max-width:900px;
+  margin:auto;
+  padding:10px;
+}
+
+/* TARJETAS POST */
+.post{
+  background:var(--card);
+  margin-bottom:10px;
+  padding:10px;
+  border-radius:6px;
+}
+
+.post h2{
+  margin:0 0 5px 0;
+  font-size:18px;
+}
+
+.post a{
+  color:var(--link);
+  text-decoration:none;
+  font-weight:bold;
+}
