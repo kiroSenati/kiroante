@@ -1,96 +1,116 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Blog Anime</title>
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimePortal - Catálogo de Anime</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h2>🎬 AnimePortal</h2>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#" aria-label="Ir a Inicio">Inicio</a></li>
+                        <li><a href="#" aria-label="Ir a sección Anime">Anime</a></li>
+                        <li><a href="#" aria-label="Ir a sección En emisión">En emisión</a></li>
+                        <li><a href="#" aria-label="Ir a Discord">Discord</a></li>
+                    </ul>
+                </nav>
+                <div class="search-container">
+                    <input type="text" id="search-input" class="search-input" placeholder="Buscar anime..." aria-label="Buscar anime">
+                    <button class="search-btn" aria-label="Buscar">🔍</button>
+                </div>
+            </div>
+        </div>
+    </header>
 
-<header>
-  <div class="logo">Mi Blog Anime</div>
-  <button onclick="toggleMode()">Modo</button>
-</header>
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-chips" id="filter-chips">
+                <span class="chip active" data-letter="#">#</span>
+                <span class="chip" data-letter="A">A</span>
+                <span class="chip" data-letter="B">B</span>
+                <span class="chip" data-letter="C">C</span>
+                <span class="chip" data-letter="D">D</span>
+                <span class="chip" data-letter="E">E</span>
+                <span class="chip" data-letter="F">F</span>
+                <span class="chip" data-letter="G">G</span>
+                <span class="chip" data-letter="H">H</span>
+                <span class="chip" data-letter="I">I</span>
+                <span class="chip" data-letter="J">J</span>
+                <span class="chip" data-letter="K">K</span>
+                <span class="chip" data-letter="L">L</span>
+                <span class="chip" data-letter="M">M</span>
+                <span class="chip" data-letter="N">N</span>
+                <span class="chip" data-letter="O">O</span>
+                <span class="chip" data-letter="P">P</span>
+                <span class="chip" data-letter="Q">Q</span>
+                <span class="chip" data-letter="R">R</span>
+                <span class="chip" data-letter="S">S</span>
+                <span class="chip" data-letter="T">T</span>
+                <span class="chip" data-letter="U">U</span>
+                <span class="chip" data-letter="V">V</span>
+                <span class="chip" data-letter="W">W</span>
+                <span class="chip" data-letter="X">X</span>
+                <span class="chip" data-letter="Y">Y</span>
+                <span class="chip" data-letter="Z">Z</span>
+            </div>
+        </div>
+    </section>
 
-<div class="container">
+    <section class="airing-section">
+        <div class="container">
+            <h2 class="section-title">En emisión</h2>
+            <div class="carousel-container" id="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Anterior">⟵</button>
+                <div class="carousel" id="carousel">
+                    <div class="carousel-track" id="carousel-track"></div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Siguiente">⟶</button>
+            </div>
+        </div>
+    </section>
 
-  <div class="post">
-    <h2>Nuevo Anime Disponible</h2>
-    <p>Lista actualizada con nuevos episodios disponibles para descargar.</p>
-    <a href="#">Ver más</a>
-  </div>
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Descubre el mejor anime en un solo lugar</h1>
+            <div class="hero-desc">
+                <p>Catálogo completo de series, películas, OVAs y especiales. Mantente al día con los últimos episodios y disfruta de contenido exclusivo.</p>
+            </div>
+        </div>
+    </section>
 
-  <div class="post">
-    <h2>Manga Recomendado</h2>
-    <p>Un manga increíble que debes leer este mes.</p>
-    <a href="#">Leer más</a>
-  </div>
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-banner">
+                <h3>¡Únete a nuestra comunidad y obtén acceso a contenido exclusivo!</h3>
+                <button class="cta-btn" aria-label="Únete ahora">Registrarse 🚀</button>
+            </div>
+        </div>
+    </section>
 
-  <div class="post">
-    <h2>Últimas Actualizaciones</h2>
-    <p>Se agregaron nuevos enlaces Mega, Drive y Mediafire.</p>
-    <a href="#">Ir a descargas</a>
-  </div>
+    <section class="episodes-section">
+        <div class="container">
+            <h2 class="section-title">Últimos episodios</h2>
+            <div class="grid" id="episodes-grid"></div>
+            <button class="see-more-btn" id="see-more-btn" aria-label="Ver más episodios">Ver más ⬇️</button>
+        </div>
+    </section>
 
- <h2>Ejecutar Python</h2>
+    <section class="movies-section">
+        <div class="container">
+            <h2 class="section-title">Películas, OVAs y Especiales</h2>
+            <div class="grid" id="movies-grid"></div>
+        </div>
+    </section>
 
-<textarea id="code" rows="8" style="width:100%;">
-print("Hola Kevin")
-for i in range(5):
-    print("Número:", i)
-</textarea>
-
-<br><br>
-<button onclick="runPython()">Ejecutar</button>
-
-<pre id="output">Cargando Python...</pre>
-
-<script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
-
-<script>
-let pyodideReady = false;
-let pyodide;
-
-async function init(){
-  pyodide = await loadPyodide();
-  pyodideReady = true;
-  document.getElementById("output").textContent = "Python listo ✔";
-}
-
-init();
-
-async function runPython(){
-  if(!pyodideReady){
-    document.getElementById("output").textContent = "Espera... Python aún está cargando";
-    return;
-  }
-
-  const code = document.getElementById("code").value;
-
-  try{
-    pyodide.runPython(`
-import sys, io
-sys.stdout = io.StringIO()
-sys.stderr = io.StringIO()
-`);
-    pyodide.runPython(code);
-    const output = pyodide.runPython("sys.stdout.getvalue()");
-    document.getElementById("output").textContent = output || "Ejecutado ✔";
-  }catch(err){
-    document.getElementById("output").textContent = err;
-  }
-}
-</script>
-</div>
-
-<script>
-function toggleMode(){
-  document.body.classList.toggle("dark");
-}
-</script>
-
-</body>
-</html>
+    <footer class="footer">
+        <div class="footer-content">
+            <div
+\<Streaming stoppped because the conversation grew too long for this model\>
