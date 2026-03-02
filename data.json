@@ -2,233 +2,278 @@
 {
   "airing": [
     {
-      "id": 1,
-      "title": "Sousou no Frieren",
-      "year": 2023,
-      "type": "ANIME",
-      "poster": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-      "tags": ["Fantasía", "Aventura"],
-      "isNew": false
-    },
-    {
-      "id": 2,
-      "title": "Spy x Family Season 2",
+      "id": "a1",
+      "title": "Shingeki no Kyojin: Final Season",
       "year": 2024,
       "type": "ANIME",
-      "poster": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "tags": ["Comedia", "Acción"],
+      "poster": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      "tags": ["Acción", "Drama"],
       "isNew": true
     },
     {
-      "id": 3,
-      "title": "Jujutsu Kaisen Season 2",
-      "year": 2023,
+      "id": "a2",
+      "title": "Jujutsu Kaisen: Shibuya",
+      "year": 2024,
       "type": "ANIME",
-      "poster": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "tags": ["Acción", "Supernatural"],
-      "isNew": false
+      "poster": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "tags": ["Acción", "Sobrenatural"],
+      "isNew": true
     },
     {
-      "id": 4,
-      "title": "Chainsaw Man",
-      "year": 2022,
+      "id": "a3",
+      "title": "Chainsaw Man: Reze",
+      "year": 2024,
       "type": "ANIME",
       "poster": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
       "tags": ["Acción", "Horror"],
       "isNew": false
     },
     {
-      "id": 5,
-      "title": "Demon Slayer: Hashira Training Arc",
+      "id": "a4",
+      "title": "One Piece: Egghead",
       "year": 2024,
       "type": "ANIME",
-      "poster": "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
-      "tags": ["Acción", "Fantasía"],
+      "poster": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "tags": ["Aventura", "Fantasía"],
+      "isNew": false
+    },
+    {
+      "id": "a5",
+      "title": "Demon Slayer: Hashira",
+      "year": 2024,
+      "type": "ANIME",
+      "poster": "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
+      "tags": ["Acción", "Artes Marciales"],
       "isNew": true
     }
   ],
   "episodes": [
     {
-      "id": 101,
-      "title": "Attack on Titan Final Season Part 4",
-      "year": 2024,
-      "type": "ANIME",
-      "poster": "linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%)",
-      "tags": ["Acción", "Drama"],
-      "isNew": true
-    },
-    {
-      "id": 102,
-      "title": "My Hero Academia Season 7",
-      "year": 2024,
-      "type": "ANIME",
-      "poster": "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)",
-      "tags": ["Acción", "Superhéroe"],
-      "isNew": false
-    },
-    {
-      "id": 103,
-      "title": "One Piece",
-      "year": 1999,
-      "type": "ANIME",
-      "poster": "linear-gradient(135deg, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%)",
-      "tags": ["Aventura", "Comedia"],
-      "isNew": false
-    },
-    {
-      "id": 104,
-      "title": "Naruto Shippuden",
-      "year": 2007,
+      "id": "e1",
+      "title": "Frieren: Beyond Journey's End",
+      "year": 2023,
       "type": "ANIME",
       "poster": "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)",
-      "tags": ["Acción", "Fantasía"],
-      "isNew": false
-    },
-    {
-      "id": 105,
-      "title": "Bleach: Thousand-Year Blood War",
-      "year": 2022,
-      "type": "ANIME",
-      "poster": "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
-      "tags": ["Acción", "Supernatural"],
+      "tags": ["Fantasía", "Slice of Life"],
       "isNew": true
     },
     {
-      "id": 106,
-      "title": "Fullmetal Alchemist: Brotherhood",
-      "year": 2009,
+      "id": "e2",
+      "title": "Spy x Family: Part 2",
+      "year": 2023,
       "type": "ANIME",
-      "poster": "linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%)",
+      "poster": "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
+      "tags": ["Comedia", "Acción"],
+      "isNew": false
+    },
+    {
+      "id": "e3",
+      "title": "Mob Psycho 100: III",
+      "year": 2022,
+      "type": "ANIME",
+      "poster": "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)",
+      "tags": ["Acción", "Sobrenatural"],
+      "isNew": false
+    },
+    {
+      "id": "e4",
+      "title": "Vinland Saga: Season 2",
+      "year": 2023,
+      "type": "ANIME",
+      "poster": "linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%)",
+      "tags": ["Acción", "Histórico"],
+      "isNew": true
+    },
+    {
+      "id": "e5",
+      "title": "Blue Lock",
+      "year": 2023,
+      "type": "ANIME",
+      "poster": "linear-gradient(135deg, #ff8c42 0%, #ff6363 100%)",
+      "tags": ["Deportes", "Drama"],
+      "isNew": true
+    },
+    {
+      "id": "e6",
+      "title": "Bocchi the Rock!",
+      "year": 2022,
+      "type": "ANIME",
+      "poster": "linear-gradient(135deg, #ff7eb3 0%, #ff758c 100%)",
+      "tags": ["Música", "Comedia"],
+      "isNew": false
+    },
+    {
+      "id": "e7",
+      "title": "Mushoku Tensei: II",
+      "year": 2023,
+      "type": "ANIME",
+      "poster": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      "tags": ["Fantasía", "Aventura"],
+      "isNew": true
+    },
+    {
+      "id": "e8",
+      "title": "Attack on Titan: Final",
+      "year": 2024,
+      "type": "ANIME",
+      "poster": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
       "tags": ["Acción", "Drama"],
       "isNew": false
     },
     {
-      "id": 107,
-      "title": "Death Note",
-      "year": 2006,
+      "id": "e9",
+      "title": "Heavenly Delusion",
+      "year": 2023,
       "type": "ANIME",
-      "poster": "linear-gradient(135deg, #2c3e50 0%, #3498db 100%)",
-      "tags": ["Misterio", "Thriller"],
-      "isNew": false
+      "poster": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+      "tags": ["Misterio", "Sci-Fi"],
+      "isNew": true
     },
     {
-      "id": 108,
-      "title": "Tokyo Ghoul: re",
-      "year": 2018,
+      "id": "e10",
+      "title": "Sakamoto Days",
+      "year": 2025,
       "type": "ANIME",
-      "poster": "linear-gradient(135deg, #43cea2 0%, #185a9d 100%)",
-      "tags": ["Horror", "Drama"],
-      "isNew": false
-    },
-    {
-      "id": 109,
-      "title": "Hunter x Hunter",
-      "year": 2011,
-      "type": "ANIME",
-      "poster": "linear-gradient(135deg, #ffd89b 0%, #19547b 100%)",
-      "tags": ["Aventura", "Acción"],
-      "isNew": false
-    },
-    {
-      "id": 110,
-      "title": "Demon Slayer: Entertainment District Arc",
-      "year": 2021,
-      "type": "ANIME",
-      "poster": "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)",
-      "tags": ["Acción", "Fantasía"],
-      "isNew": false
+      "poster": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "tags": ["Acción", "Comedia"],
+      "isNew": true
     }
   ],
   "movies": [
     {
-      "id": 201,
-      "title": "Spirited Away",
-      "year": 2001,
-      "type": "PELÍCULA",
-      "poster": "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)",
-      "tags": ["Fantasía", "Aventura"],
-      "isNew": false
-    },
-    {
-      "id": 202,
-      "title": "Your Name.",
+      "id": "m1",
+      "title": "Your Name",
       "year": 2016,
       "type": "PELÍCULA",
-      "poster": "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
+      "poster": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
       "tags": ["Romance", "Fantasía"],
       "isNew": false
     },
     {
-      "id": 203,
+      "id": "m2",
+      "title": "A Silent Voice",
+      "year": 2017,
+      "type": "PELÍCULA",
+      "poster": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "tags": ["Drama", "Escolar"],
+      "isNew": false
+    },
+    {
+      "id": "m3",
       "title": "Weathering With You",
       "year": 2019,
       "type": "PELÍCULA",
-      "poster": "linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%)",
+      "poster": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
       "tags": ["Romance", "Fantasía"],
       "isNew": false
     },
     {
-      "id": 204,
+      "id": "m4",
+      "title": "Jujutsu Kaisen 0",
+      "year": 2022,
+      "type": "PELÍCULA",
+      "poster": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "tags": ["Acción", "Sobrenatural"],
+      "isNew": true
+    },
+    {
+      "id": "m5",
+      "title": "The First Slam Dunk",
+      "year": 2022,
+      "type": "PELÍCULA",
+      "poster": "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
+      "tags": ["Deportes", "Drama"],
+      "isNew": true
+    },
+    {
+      "id": "m6",
+      "title": "One Piece Film: Red",
+      "year": 2022,
+      "type": "PELÍCULA",
+      "poster": "linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)",
+      "tags": ["Acción", "Aventura"],
+      "isNew": false
+    },
+    {
+      "id": "m7",
+      "title": "Evangelion: Thrice Upon a Time",
+      "year": 2021,
+      "type": "PELÍCULA",
+      "poster": "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
+      "tags": ["Sci-Fi", "Mecha"],
+      "isNew": false
+    },
+    {
+      "id": "m8",
       "title": "Demon Slayer: Mugen Train",
       "year": 2020,
       "type": "PELÍCULA",
-      "poster": "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
+      "poster": "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)",
       "tags": ["Acción", "Fantasía"],
-      "isNew": true
-    },
-    {
-      "id": 205,
-      "title": "My Neighbor Totoro",
-      "year": 1988,
-      "type": "PELÍCULA",
-      "poster": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
-      "tags": ["Fantasía", "Familia"],
       "isNew": false
     },
     {
-      "id": 206,
-      "title": "A Silent Voice",
-      "year": 2016,
+      "id": "m9",
+      "title": "Dragon Ball Super: Super Hero",
+      "year": 2022,
       "type": "PELÍCULA",
-      "poster": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
-      "tags": ["Drama", "Romance"],
+      "poster": "linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%)",
+      "tags": ["Acción", "Aventura"],
       "isNew": false
     },
     {
-      "id": 207,
+      "id": "m10",
+      "title": "The Boy and the Beast",
+      "year": 2015,
+      "type": "PELÍCULA",
+      "poster": "linear-gradient(135deg, #ff8c42 0%, #ff6363 100%)",
+      "tags": ["Aventura", "Fantasía"],
+      "isNew": false
+    },
+    {
+      "id": "m11",
+      "title": "Paprika",
+      "year": 2006,
+      "type": "PELÍCULA",
+      "poster": "linear-gradient(135deg, #ff7eb3 0%, #ff758c 100%)",
+      "tags": ["Sci-Fi", "Thriller"],
+      "isNew": false
+    },
+    {
+      "id": "m12",
       "title": "Perfect Blue",
       "year": 1997,
       "type": "PELÍCULA",
-      "poster": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
-      "tags": ["Thriller", "Misterio"],
+      "poster": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+      "tags": ["Thriller", "Psicológico"],
       "isNew": false
     },
     {
-      "id": 208,
+      "id": "m13",
       "title": "Ghost in the Shell",
       "year": 1995,
       "type": "PELÍCULA",
-      "poster": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-      "tags": ["Ciencia Ficción", "Acción"],
+      "poster": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+      "tags": ["Sci-Fi", "Cyberpunk"],
       "isNew": false
     },
     {
-      "id": 209,
-      "title": "Princess Mononoke",
-      "year": 1997,
+      "id": "m14",
+      "title": "Akira",
+      "year": 1988,
       "type": "PELÍCULA",
-      "poster": "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
-      "tags": ["Fantasía", "Aventura"],
+      "poster": "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
+      "tags": ["Sci-Fi", "Acción"],
       "isNew": false
     },
     {
-      "id": 210,
-      "title": "The Boy and the Heron",
-      "year": 2023,
-      "type": "PELÍCULA",
-      "poster": "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)",
-      "tags": ["Fantasía", "Aventura"],
-      "isNew": true
+      "id": "m15",
+      "title": "Berserk: The Golden Age Arc",
+      "year": 2012,
+      "type": "OVA",
+      "poster": "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
+      "tags": ["Acción", "Fantasía Oscura"],
+      "isNew": false
     }
   ]
 }
