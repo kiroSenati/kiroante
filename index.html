@@ -2,115 +2,127 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimePortal - Catálogo de Anime</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de anime moderno con estética dark">
+  <title>AnimeDark - Catálogo de Anime</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <h2>🎬 AnimePortal</h2>
-                </div>
-                <nav class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#" aria-label="Ir a Inicio">Inicio</a></li>
-                        <li><a href="#" aria-label="Ir a sección Anime">Anime</a></li>
-                        <li><a href="#" aria-label="Ir a sección En emisión">En emisión</a></li>
-                        <li><a href="#" aria-label="Ir a Discord">Discord</a></li>
-                    </ul>
-                </nav>
-                <div class="search-container">
-                    <input type="text" id="search-input" class="search-input" placeholder="Buscar anime..." aria-label="Buscar anime">
-                    <button class="search-btn" aria-label="Buscar">🔍</button>
-                </div>
-            </div>
-        </div>
-    </header>
+  <header>
+    <div class="header-content">
+      <a href="#" class="logo">AnimeDark</a>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#anime">Anime</a></li>
+          <li><a href="#airing">En emisión</a></li>
+          <li><a href="#discord">Discord</a></li>
+        </ul>
+      </nav>
+      <div class="search-pill">
+        <input type="search" id="searchInput" placeholder="Buscar anime..." aria-label="Buscar anime">
+        <button type="button" aria-label="Buscar">🔍</button>
+      </div>
+    </div>
+  </header>
 
-    <section class="filter-section">
-        <div class="container">
-            <div class="filter-chips" id="filter-chips">
-                <span class="chip active" data-letter="#">#</span>
-                <span class="chip" data-letter="A">A</span>
-                <span class="chip" data-letter="B">B</span>
-                <span class="chip" data-letter="C">C</span>
-                <span class="chip" data-letter="D">D</span>
-                <span class="chip" data-letter="E">E</span>
-                <span class="chip" data-letter="F">F</span>
-                <span class="chip" data-letter="G">G</span>
-                <span class="chip" data-letter="H">H</span>
-                <span class="chip" data-letter="I">I</span>
-                <span class="chip" data-letter="J">J</span>
-                <span class="chip" data-letter="K">K</span>
-                <span class="chip" data-letter="L">L</span>
-                <span class="chip" data-letter="M">M</span>
-                <span class="chip" data-letter="N">N</span>
-                <span class="chip" data-letter="O">O</span>
-                <span class="chip" data-letter="P">P</span>
-                <span class="chip" data-letter="Q">Q</span>
-                <span class="chip" data-letter="R">R</span>
-                <span class="chip" data-letter="S">S</span>
-                <span class="chip" data-letter="T">T</span>
-                <span class="chip" data-letter="U">U</span>
-                <span class="chip" data-letter="V">V</span>
-                <span class="chip" data-letter="W">W</span>
-                <span class="chip" data-letter="X">X</span>
-                <span class="chip" data-letter="Y">Y</span>
-                <span class="chip" data-letter="Z">Z</span>
-            </div>
+  <section class="az-filter">
+    <div class="container">
+      <div class="az-chips" id="azChips">
+        <a href="#" class="az-chip active" data-letter="all">#</a>
+        <a href="#" class="az-chip" data-letter="a">A</a>
+        <a href="#" class="az-chip" data-letter="b">B</a>
+        <a href="#" class="az-chip" data-letter="c">C</a>
+        <a href="#" class="az-chip" data-letter="d">D</a>
+        <a href="#" class="az-chip" data-letter="e">E</a>
+        <a href="#" class="az-chip" data-letter="f">F</a>
+        <a href="#" class="az-chip" data-letter="g">G</a>
+        <a href="#" class="az-chip" data-letter="h">H</a>
+        <a href="#" class="az-chip" data-letter="i">I</a>
+        <a href="#" class="az-chip" data-letter="j">J</a>
+        <a href="#" class="az-chip" data-letter="k">K</a>
+        <a href="#" class="az-chip" data-letter="l">L</a>
+        <a href="#" class="az-chip" data-letter="m">M</a>
+        <a href="#" class="az-chip" data-letter="n">N</a>
+        <a href="#" class="az-chip" data-letter="o">O</a>
+        <a href="#" class="az-chip" data-letter="p">P</a>
+        <a href="#" class="az-chip" data-letter="q">Q</a>
+        <a href="#" class="az-chip" data-letter="r">R</a>
+        <a href="#" class="az-chip" data-letter="s">S</a>
+        <a href="#" class="az-chip" data-letter="t">T</a>
+        <a href="#" class="az-chip" data-letter="u">U</a>
+        <a href="#" class="az-chip" data-letter="v">V</a>
+        <a href="#" class="az-chip" data-letter="w">W</a>
+        <a href="#" class="az-chip" data-letter="x">X</a>
+        <a href="#" class="az-chip" data-letter="y">Y</a>
+        <a href="#" class="az-chip" data-letter="z">Z</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="airing-carousel" id="airing">
+      <div class="container">
+        <h2 class="section-title">En emisión</h2>
+        <div class="carousel-container">
+          <div class="carousel-wrapper" id="airingCarousel"></div>
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="prevBtn" aria-label="Anterior">←</button>
+            <button class="carousel-btn" id="nextBtn" aria-label="Siguiente">→</button>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section class="airing-section">
-        <div class="container">
-            <h2 class="section-title">En emisión</h2>
-            <div class="carousel-container" id="carousel-container">
-                <button class="carousel-btn prev-btn" aria-label="Anterior">⟵</button>
-                <div class="carousel" id="carousel">
-                    <div class="carousel-track" id="carousel-track"></div>
-                </div>
-                <button class="carousel-btn next-btn" aria-label="Siguiente">⟶</button>
-            </div>
+    <section class="hero" id="home">
+      <div class="container">
+        <h1>Catálogo de Anime Exclusivo</h1>
+        <div class="description-box">
+          Descubre los mejores títulos del momento, desde los últimos episodios hasta clásicos inolvidables. 
+          Explora nuestra colección curada con estadísticas, reseñas y comunidad activa.
+          Todo en un solo lugar para verdaderos otakus.
         </div>
+      </div>
     </section>
 
-    <section class="hero-section">
-        <div class="container">
-            <h1 class="hero-title">Descubre el mejor anime en un solo lugar</h1>
-            <div class="hero-desc">
-                <p>Catálogo completo de series, películas, OVAs y especiales. Mantente al día con los últimos episodios y disfruta de contenido exclusivo.</p>
-            </div>
-        </div>
+    <section class="cta-banner">
+      <div class="container">
+        🚀 Únete ahora y obtén acceso exclusivo a contenido premium y estrenos anticipados
+      </div>
     </section>
 
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-banner">
-                <h3>¡Únete a nuestra comunidad y obtén acceso a contenido exclusivo!</h3>
-                <button class="cta-btn" aria-label="Únete ahora">Registrarse 🚀</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="episodes-section">
-        <div class="container">
-            <h2 class="section-title">Últimos episodios</h2>
-            <div class="grid" id="episodes-grid"></div>
-            <button class="see-more-btn" id="see-more-btn" aria-label="Ver más episodios">Ver más ⬇️</button>
-        </div>
+    <section class="latest-episodes" id="anime">
+      <div class="container">
+        <h2 class="section-title">Últimos episodios</h2>
+        <div class="grid" id="episodesGrid"></div>
+        <button class="view-more" id="viewMoreEpisodes">Ver más</button>
+      </div>
     </section>
 
     <section class="movies-section">
-        <div class="container">
-            <h2 class="section-title">Películas, OVAs y Especiales</h2>
-            <div class="grid" id="movies-grid"></div>
-        </div>
+      <div class="container">
+        <h2 class="section-title">Películas, OVAs y Especiales</h2>
+        <div class="grid" id="moviesGrid"></div>
+      </div>
     </section>
+  </main>
 
-    <footer class="footer">
-        <div class="footer-content">
-            <div
-\<Streaming stoppped because the conversation grew too long for this model\>
+  <footer>
+    <div class="footer-content">
+      <div class="logo">AnimeDark</div>
+      <ul class="footer-menu">
+        <li><a href="#anime">Anime</a></li>
+        <li><a href="#movies">Especiales</a></li>
+        <li><a href="#movies">OVAs</a></li>
+        <li><a href="#movies">Películas</a></li>
+        <li><a href="#premium">Plus</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <button class="fab" id="fabBtn" aria-label="Subir">↑</button>
+
+  <script src="app.js"></script>
+</body>
+</html>
